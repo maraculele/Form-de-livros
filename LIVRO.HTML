@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>formulário</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Qual a sua melhor experiência com livro? </h1>
+        <p id="subtitulo"> Complete as informações</p>
+        <br>
+
+    </div>
+
+        <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="Nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="Sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+
+        </div>
+
+        <div campo="campo">
+            <label for="Email"><strong>Email</strong></label>
+                <input type="email" name="Email" id="Email" required>
+                
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual tipo de leitor você é?</strong></label>
+            <label>
+                <input type="radio" name="frequente" value="frequente" checked>Frequente
+    
+            </label>
+            
+           
+            <label>
+                <input type="radio" name="procastinador" value="procastinador">Procastinador
+
+            </label>
+
+            <label>
+                <input type="radio" name="Regular" value="Regular">Regular
+                
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual gênero você mais gosta?</strong></label>
+            <select id="Frequente">
+                <option selected disabled value="">Escolha</option>
+                <option>Terror</option>
+                <option>Romance</option>
+                <option>Aventura</option>
+                <option>Ficção</option>
+                <option>LGBTQIA+</option>
+            </select>
+
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Os melhores sites de compra</strong> </label>
+                <input type="checkbox" id="site1" name="site1" value="Amazon">
+                <label for="site1">Amazon</label>
+                <input type="checkbox" id="site2" name="site2" value="Submarino">
+                <label for="site2">Submarino</label>
+                <input type="checkbox" id="site3" name="site3" value="Lelivros">
+                <label for="site3">Lelivros</label>
+                <input type="checkbox" id="site4" name="site4" value="Saraiva">
+                <label for="site4">Saraiva</label>
+            </div>
+        </fieldset>
+
+            <div>
+                <label><strong>Conte um pouco como você entrou nesse mundo</strong></label>           
+                <textarea row="6" style="width: 26cm" id="experiencia" name="experiencia"></textarea>
+
+            </div>
+
+            <button class="botao" tytpe="submit">Concluido</button>
+
+</form>
+
+
+
+</body>
+</html>
